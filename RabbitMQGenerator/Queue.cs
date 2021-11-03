@@ -14,7 +14,7 @@ namespace RabbitMQGenerator
         public string Message { get => message; set => message = value; }
     }
 
-
+    //add
 }
 
     
