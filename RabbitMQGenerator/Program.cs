@@ -14,9 +14,16 @@ namespace RabbitMQGenerator
 
         static void Main(string[] args)
         {
-            Console.WriteLine(Message);
+            Application.Run(new Form1());
+            
         }
+
+        
+
+       
     }
+
+    
 }
 
 
