@@ -9,14 +9,8 @@ namespace RabbitMQGenerator
     public class Queue
     {
         
-        //{
-        //    string message = "Test Message";
-
-        //    public string Message { get => message; set => message = value; }
-
-
-
-        //create method that call both the queue from combo and the number - call it in the button method 
+       
+        // method that call boths the queue and number - call it in the button method 
 
         public List<string> GetListMsgs(string queue, int msgCount)
 
@@ -29,7 +23,6 @@ namespace RabbitMQGenerator
         }
 
     
-
 
          private string GetSampleMsg(string queue)
         {
@@ -60,8 +53,10 @@ namespace RabbitMQGenerator
             var msgFields = sampleMsg.Split('þ');
             msgFields[0] = DateTime.Now.ToString();
             var newMsg = String.Join("þ", msgFields);
+            return null;
+                       
         }
-
+             
 
         private string ModifyMsg(string sampleMsg)
         {
@@ -79,26 +74,25 @@ namespace RabbitMQGenerator
             {
                 allThaMsgs.Add(ModifyMsg(sampleMsg));
 
-
-
-                //TODO add delay of 1 sec to prevent overlap of timestamp
-                var time = 3000;
+                                               
+                var time = 1000;
                 System.Threading.Thread.Sleep(time);
-                
-                                 
-                
+
+                Console.WriteLine(allThaMsgs);
+
+
             }
 
             return allThaMsgs;
+
+            
         }
 
         //methods to increment and produce messages
 
         //public string NewMsg(string int) => List<string>;
 
-        //    {
-        //        return;
-        //    }
+      
 
 
         //Rabbit
