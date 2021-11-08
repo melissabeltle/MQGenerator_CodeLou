@@ -16,7 +16,7 @@ namespace RabbitMQGenerator
 
 
 
-        //create method that call both the queue from combo and the number - call it in the button method instead of the GetSampleMsg that is there now
+        //create method that call both the queue from combo and the number - call it in the button method 
 
         public List<string> GetListMsgs(string queue, int msgCount)
 
@@ -51,10 +51,7 @@ namespace RabbitMQGenerator
             }
 
 
-
-
-
-       
+             
         }
 
 
@@ -82,14 +79,13 @@ namespace RabbitMQGenerator
             {
                 allThaMsgs.Add(ModifyMsg(sampleMsg));
 
+
+
                 //TODO add delay of 1 sec to prevent overlap of timestamp
-                var time = '3000';
-                Thread.Sleep(time);
-
-
-                    
-
+                var time = 3000;
+                System.Threading.Thread.Sleep(time);
                 
+                                 
                 
             }
 
