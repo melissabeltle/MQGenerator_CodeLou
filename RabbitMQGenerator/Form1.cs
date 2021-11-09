@@ -63,15 +63,7 @@ namespace RabbitMQGenerator
             msgCount = int.Parse(numericUpDown1.Value.ToString());
         }
 
-       //return the final list and populate to textbox:
-
-        public void Getall(string allThaMsgs)
-        {
-            string finalList = allThaMsgs;
-            
-        }
-
-       
+              
 
     }
 }
