@@ -18,7 +18,10 @@ namespace RabbitMQGenerator
             var sample = GetSampleMsg(queue);
 
             //TODO: call to get multiple messages and return them
-            return new List<string>();
+            //return new List<string>();
+            
+            var modifiedMsgs = GetAllMessages(sample, msgCount);
+            return modifiedMsgs;
 
         }
 
