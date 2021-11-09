@@ -23,6 +23,7 @@ namespace RabbitMQGenerator
         public string queue;
 
         private Queue _queue;
+        private readonly object finalList;
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -31,7 +32,13 @@ namespace RabbitMQGenerator
 
         private void button1_Click(object sender, EventArgs e)
         {
-            _queue.GetListMsgs(queue, msgCount);
+            var messages = _queue.GetListMsgs(queue, msgCount);
+
+                foreach(var singleMsg in messages)
+            {
+                textBox1.Text += singleMsg + Environment.NewLine;
+
+            }
         }
 
        
@@ -55,6 +62,16 @@ namespace RabbitMQGenerator
         {
             msgCount = int.Parse(numericUpDown1.Value.ToString());
         }
+
+       //return the final list and populate to textbox:
+
+        public void Getall(string allThaMsgs)
+        {
+            string finalList = allThaMsgs;
+            
+        }
+
+       
 
     }
 }
