@@ -63,7 +63,6 @@ namespace RabbitMQGenerator
             msgCount = int.Parse(numericUpDown1.Value.ToString());
         }
 
-              
-
+       
     }
 }
