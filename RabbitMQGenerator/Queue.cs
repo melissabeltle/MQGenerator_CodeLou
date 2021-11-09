@@ -10,16 +10,12 @@ namespace RabbitMQGenerator
     {
         
        
-        // method that call boths the queue and number - call it in the button method 
+        // call both the queue and number of msgs requested
 
         public List<string> GetListMsgs(string queue, int msgCount)
 
         {
-            var sample = GetSampleMsg(queue);
-
-            //TODO: call to get multiple messages and return them
-            //return new List<string>();
-            
+            var sample = GetSampleMsg(queue);          
             var modifiedMsgs = GetAllMessages(sample, msgCount);
             return modifiedMsgs;
 
@@ -72,7 +68,7 @@ namespace RabbitMQGenerator
         {
             var allThaMsgs = new List<string>();
 
-            //TODO: make a loop
+            
             for (int i = 0; i < msgCnt; i++)
             {
                 allThaMsgs.Add(ModifyMsg(sampleMsg));
@@ -91,15 +87,7 @@ namespace RabbitMQGenerator
             
         }
 
-        //methods to increment and produce messages
-
-        //public string NewMsg(string int) => List<string>;
-
-      
-
-
-        //Rabbit
-
+        
 
     } }
 
