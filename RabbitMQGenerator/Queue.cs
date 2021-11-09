@@ -38,7 +38,7 @@ namespace RabbitMQGenerator
                     return @"09/13/2021 14:09:35þ3060þFþ\\LOUQAMTX021B\Pickup\FromExtEditReq\1176_199925_199925_054ea069f5004089a455b51be060cffa.batchþ152984þ1þ";
 
 
-                case "COMMS.DCM.ERA.INTPUT":
+                case "COMMS.DCM.ERA.INPUT":
                     return @"11/04/2021 06:30:09þ028471966723409290665þFþ\\10.15.20.112\zmops\era.spec\RIVERSIDEEPIC\2021\11\04\20211104_063006_2936890.gzþ153011þ1þ1556-ALL-20211104-nGNT152X-EPIC-2936890.835";
 
 
