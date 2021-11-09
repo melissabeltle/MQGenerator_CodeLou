@@ -17,13 +17,13 @@ namespace RabbitMQGenerator
 
             "COMMS.DCM.CLM.INPUT",
             "COMMS.DCM.ERA.INPUT",
-            //"COMMS.DCM.APLHAII.INPUT",
-            //"COMMS.MQSQLIZER.INPUT",
+            "COMMS.NDT.CLM.BUILD.INPUT",
+            "COMMS.DCM.APLHAII.INPUT",
+            "COMMS.MQSQLIZER.INPUT",
             //"COMMS.CIGNA.CM.OUTPUT",
             //"COMMS.CIGNA.CM.INPUT",
             //"COMMS.CIGNA.ELG.INPUT",
             //"COMMS.CIGNA.ELG.OUTPUT",
-            //"COMMS.NDT.CLM.BUILD.INPUT",
             //"FISSBOT.BATCHPARSER.INPUT",
             //"FISSBOT.BATCHROUTER.INPUT"
 
